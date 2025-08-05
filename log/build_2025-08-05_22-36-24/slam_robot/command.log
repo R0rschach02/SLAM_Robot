@@ -1,4 +1,0 @@
-Invoking command in '/home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot -- -j4 -l4
-Invoked command in '/home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot -- -j4 -l4
-Invoking command in '/home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot
-Invoked command in '/home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot
