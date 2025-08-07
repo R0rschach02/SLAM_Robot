@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="slam_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find simple_robot_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find simple_robot_description)/urdf/slam_robot.trans" />
-<xacro:include filename="$(find simple_robot_description)/urdf/slam_robot.gazebo" />
+<xacro:include filename="$(find slam_robot)/simple_robot_description/urdf/materials.xacro" />
+<xacro:include filename="$(find slam_robot)/simple_robot_description/urdf/slam_robot.trans" />
+<xacro:include filename="$(find slam_robot)/simple_robot_description/urdf/slam_robot.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="0.0010000000000001368 0.0011939194270506508 0.04980152363410654" rpy="0 0 0"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="0.0064 0.06075 -0.08235" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/ServoTiltBracket2__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/ServoTiltBracket2__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0064 0.06075 -0.08235" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/ServoTiltBracket2__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/ServoTiltBracket2__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="0.079 -0.065 -0.027017" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/LeftMotorWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftMotorWheel__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.079 -0.065 -0.027017" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/LeftMotorWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftMotorWheel__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="0.079 -0.0 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/LeftMiddleWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftMiddleWheel__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.079 -0.0 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/LeftMiddleWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftMiddleWheel__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="0.079 0.065 -0.026996" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/LeftFrontWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftFrontWheel__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.079 0.065 -0.026996" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/LeftFrontWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftFrontWheel__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-0.081 -0.066 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/RightMotorWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightMotorWheel__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.081 -0.066 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/RightMotorWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightMotorWheel__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="-0.081 -0.0 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/RightMiddleWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightMiddleWheel__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.081 -0.0 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/RightMiddleWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightMiddleWheel__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="-0.081 0.065 -0.027014" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/RightFrontWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightFrontWheel__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.081 0.065 -0.027014" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/RightFrontWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightFrontWheel__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="-0.0111 0.055 -0.0686" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/PanAssembly_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/PanAssembly_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0111 0.055 -0.0686" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/PanAssembly_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/PanAssembly_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="-0.0322 0.055 -0.1837" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/MG90S_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/MG90S_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0322 0.055 -0.1837" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/MG90S_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/MG90S_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +223,14 @@
   <visual>
     <origin xyz="-0.001 0.045 -0.056" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/MG995_v5_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/MG995_v5_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.001 0.045 -0.056" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find simple_robot_description)/meshes/MG995_v5_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/MG995_v5_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
