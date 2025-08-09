@@ -1,0 +1,28 @@
+[0.014s] Invoking command in '/home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot -- -j4 -l4
+[0.108s] Invoked command in '/home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot -- -j4 -l4
+[0.118s] Invoking command in '/home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot
+[0.125s] -- Install configuration: ""
+[0.127s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/launch
+[0.127s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/launch/display.launch.py
+[0.127s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/launch/gazebo.launch.py
+[0.127s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/model
+[0.128s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/model/materials.xacro
+[0.128s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/model/slam_robot.trans
+[0.128s] -- Installing: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/model/slam_robot.xacro
+[0.128s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/model/slam_robot.gazebo
+[0.128s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/ament_index/resource_index/package_run_dependencies/slam_robot
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/ament_index/resource_index/parent_prefix_path/slam_robot
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/environment/ament_prefix_path.sh
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/environment/ament_prefix_path.dsv
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/environment/path.sh
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/environment/path.dsv
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/local_setup.bash
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/local_setup.sh
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/local_setup.zsh
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/local_setup.dsv
+[0.129s] -- Installing: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/package.dsv
+[0.129s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/ament_index/resource_index/packages/slam_robot
+[0.130s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/cmake/slam_robotConfig.cmake
+[0.130s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/cmake/slam_robotConfig-version.cmake
+[0.130s] -- Up-to-date: /home/seriousjoke/ros2_ws/src/slam_robot/install/slam_robot/share/slam_robot/package.xml
+[0.131s] Invoked command in '/home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/seriousjoke/ros2_ws/src/slam_robot/build/slam_robot

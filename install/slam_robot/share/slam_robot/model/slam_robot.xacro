@@ -1,0 +1,304 @@
+<?xml version="1.0" ?>
+<robot name="slam_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find slam_robot)/simple_robot_description/urdf/materials.xacro" />
+<xacro:include filename="$(find slam_robot)/simple_robot_description/urdf/slam_robot.trans" />
+<xacro:include filename="$(find slam_robot)/simple_robot_description/urdf/slam_robot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0010000000000001368 0.0011939194270506508 0.04980152363410654" rpy="0 0 0"/>
+    <mass value="0.5792440316870017"/>
+    <inertia ixx="0.001453" iyy="0.001865" izz="0.003188" ixy="-0.0" iyz="-4e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ServoTiltBracket2__1__1">
+  <inertial>
+    <origin xyz="0.007728464333034345 -0.03307295019398271 -5.502122614139959e-05" rpy="0 0 0"/>
+    <mass value="0.011206517805852724"/>
+    <inertia ixx="4e-06" iyy="2e-06" izz="5e-06" ixy="1e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0064 0.06075 -0.08235" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/ServoTiltBracket2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0064 0.06075 -0.08235" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/ServoTiltBracket2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LeftMotorWheel__1__1">
+  <inertial>
+    <origin xyz="-0.017499999999999988 1.4817245394538325e-07 1.57246813896339e-07" rpy="0 0 0"/>
+    <mass value="0.5394703634836222"/>
+    <inertia ixx="0.000169" iyy="0.000139" izz="0.000139" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.079 -0.065 -0.027017" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftMotorWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.079 -0.065 -0.027017" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftMotorWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LeftMiddleWheel__1__1">
+  <inertial>
+    <origin xyz="-0.017499999999999946 -4.1357307858014494e-18 3.469446951953614e-18" rpy="0 0 0"/>
+    <mass value="0.5394703634836222"/>
+    <inertia ixx="0.000169" iyy="0.000139" izz="0.000139" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.079 -0.0 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftMiddleWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.079 -0.0 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftMiddleWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LeftFrontWheel__1__1">
+  <inertial>
+    <origin xyz="-0.017499999999999988 -7.214680686207231e-09 4.702240305951011e-07" rpy="0 0 0"/>
+    <mass value="0.5394703634836227"/>
+    <inertia ixx="0.000169" iyy="0.000139" izz="0.000139" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.079 0.065 -0.026996" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftFrontWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.079 0.065 -0.026996" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/LeftFrontWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RightMotorWheel__2__1">
+  <inertial>
+    <origin xyz="0.017499999999999974 9.834766473426626e-10 4.32133672595425e-10" rpy="0 0 0"/>
+    <mass value="0.5394703634836222"/>
+    <inertia ixx="0.000169" iyy="0.000139" izz="0.000139" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.081 -0.066 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightMotorWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.081 -0.066 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightMotorWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RightMiddleWheel__2__1">
+  <inertial>
+    <origin xyz="0.017499999999999974 -4.1357307858014494e-18 4.32133672595425e-10" rpy="0 0 0"/>
+    <mass value="0.5394703634836222"/>
+    <inertia ixx="0.000169" iyy="0.000139" izz="0.000139" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.081 -0.0 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightMiddleWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.081 -0.0 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightMiddleWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RightFrontWheel__2__1">
+  <inertial>
+    <origin xyz="0.017499999999999974 -1.0238511481686086e-07 2.4097264460232193e-07" rpy="0 0 0"/>
+    <mass value="0.5394703634836227"/>
+    <inertia ixx="0.000169" iyy="0.000139" izz="0.000139" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.081 0.065 -0.027014" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightFrontWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.081 0.065 -0.027014" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/RightFrontWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="PanAssembly_1">
+  <inertial>
+    <origin xyz="7.733358093793552e-07 3.372839234247471e-05 0.012081173443687379" rpy="0 0 0"/>
+    <mass value="0.03972773169214166"/>
+    <inertia ixx="5e-06" iyy="5e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0111 0.055 -0.0686" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/PanAssembly_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0111 0.055 -0.0686" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/PanAssembly_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG90S_v1_1">
+  <inertial>
+    <origin xyz="-0.020364284610258618 -0.00035463946451837897 -0.10135000063999143" rpy="0 0 0"/>
+    <mass value="0.05582570440066092"/>
+    <inertia ixx="3e-06" iyy="4e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0322 0.055 -0.1837" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/MG90S_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0322 0.055 -0.1837" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/MG90S_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG995_v5_v2_1">
+  <inertial>
+    <origin xyz="0.00018178331066893462 -0.010000004540074318 -0.008552466740676903" rpy="0 0 0"/>
+    <mass value="0.24596364280532734"/>
+    <inertia ixx="3.9e-05" iyy="6.5e-05" izz="4.2e-05" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.001 0.045 -0.056" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/MG995_v5_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.001 0.045 -0.056" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slam_robot)/simple_robot_description/meshes/MG995_v5_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Umdrehung 3" type="revolute">
+  <origin xyz="-0.0386 -0.00575 -0.10135" rpy="0 0 0"/>
+  <parent link="MG90S_v1_1"/>
+  <child link="ServoTiltBracket2__1__1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+  <limit upper="0.959931" lower="-0.436332" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Umdrehung 4" type="continuous">
+  <origin xyz="-0.079 0.065 0.027017" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="LeftMotorWheel__1__1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Starr 5" type="fixed">
+  <origin xyz="-0.079 0.0 0.027" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="LeftMiddleWheel__1__1"/>
+</joint>
+
+<joint name="Starr 6" type="fixed">
+  <origin xyz="-0.079 -0.065 0.026996" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="LeftFrontWheel__1__1"/>
+</joint>
+
+<joint name="Umdrehung 7" type="continuous">
+  <origin xyz="0.081 0.066 0.027" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RightMotorWheel__2__1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Starr 8" type="fixed">
+  <origin xyz="0.081 0.0 0.027" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RightMiddleWheel__2__1"/>
+</joint>
+
+<joint name="Starr 9" type="fixed">
+  <origin xyz="0.081 -0.065 0.027014" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RightFrontWheel__2__1"/>
+</joint>
+
+<joint name="Umdrehung 11" type="revolute">
+  <origin xyz="0.0101 -0.01 0.0126" rpy="0 0 0"/>
+  <parent link="MG995_v5_v2_1"/>
+  <child link="PanAssembly_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="0.959931" lower="-0.959931" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Starr 12" type="fixed">
+  <origin xyz="0.0211 0.0 0.1151" rpy="0 0 0"/>
+  <parent link="PanAssembly_1"/>
+  <child link="MG90S_v1_1"/>
+</joint>
+
+<joint name="Starr 13" type="fixed">
+  <origin xyz="0.001 -0.045 0.056" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="MG995_v5_v2_1"/>
+</joint>
+
+</robot>

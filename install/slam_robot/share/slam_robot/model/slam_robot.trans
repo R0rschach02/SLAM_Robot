@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="slam_robot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="Umdrehung 3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Umdrehung 3">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Umdrehung 3_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Umdrehung 4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Umdrehung 4">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Umdrehung 4_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Umdrehung 7_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Umdrehung 7">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Umdrehung 7_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Umdrehung 11_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Umdrehung 11">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Umdrehung 11_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
